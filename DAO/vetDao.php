@@ -9,9 +9,9 @@ class VetDao {
 
     $statement = Conexao::getConexao()->prepare($sql);
     
-    $statement->bindValue(1, $client->getName());
-    $statement->bindValue(2, $client->getEmail());
-    $statement->bindValue(3, $client->getPassword());
+    $statement->bindValue(1, $veterinario->getName());
+    $statement->bindValue(2, $veterinario->getEmail());
+    $statement->bindValue(3, $veterinario->getPassword());
     $statement->execute();
   }
 

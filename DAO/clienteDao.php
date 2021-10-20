@@ -9,9 +9,9 @@ class ClienteDao {
 
     $statement = Conexao::getConexao()->prepare($sql);
     
-    $statement->bindValue(1, $client->getName());
-    $statement->bindValue(2, $client->getEmail());
-    $statement->bindValue(3, $client->getPassword());
+    $statement->bindValue(1, $cliente->getName());
+    $statement->bindValue(2, $cliente->getEmail());
+    $statement->bindValue(3, $cliente->getPassword());
     $statement->execute();
   }
 

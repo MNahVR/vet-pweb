@@ -3,23 +3,25 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json;charset=utf-8");
 
-require_once 'models/cliente.php';
-require_once 'DAO/clienteDao.php';
+require_once 'models/animal.php';
+require_once 'DAO/animalDao.php';
 
+$id = $_POST['id'];
 $name = $_POST['name'];
-$email = $_POST['email'];
-$password = md5($_POST['password']);
+$race = $_POST['race'];
+$age = $_POST['age'];
+$decease = $_POST['decease'];
 
-$cliente = new Cliente($email, $password, $name);
-$clienteDao = new ClienteDao();
+$animal = new Animal($id, $name, $race, $age, $decease);
+$animalDao = new AnimalDao();
 
-if ($clienteDao->get($cliente) == null) {
-  $clienteDao->create($cliente);
+if ($animalDao->get($animal) == null) {
+  $animalDao->create($animal);
 
   $response = array(
     'success' => true,
     'usuario' => array(
-      'email' => $email,
+      'id' => $id,
       'name' => $name,
     ),
   );

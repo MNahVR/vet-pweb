@@ -18,7 +18,7 @@ if ($vetDao->get($veterinario) == null) {
 
   $response = array(
     'success' => true,
-    'user' => array(
+    'usuario' => array(
       'email' => $email,
       'name' => $name,
     ),
