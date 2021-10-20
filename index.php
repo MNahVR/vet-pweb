@@ -9,8 +9,8 @@
 
 <body>
   <p>
-    <a href="./views/vet/cadVet.php">Cadastro de veterinário</a> |
-    <a href="./views/vet/loginVet.php">Login de veterinário</a>
+    <a href="views/vet/cadVet.php">Cadastro de veterinário</a> |
+    <a href="views/vet/loginVet.php">Login de veterinário</a>
   </p>
 
   <h1>Cadastro de cliente</h1>
@@ -38,6 +38,6 @@
   </form>
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="./scripts/cadCliente.js"></script>
+  <script src="scripts/cadCliente.js"></script>
 </body>
 </html>

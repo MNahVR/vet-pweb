@@ -8,7 +8,7 @@
 </head>
 <body>
   <p>
-    <a href="../">Voltar</a>
+    <a href="index.php/">Voltar</a>
   </p>
   <h1>Entrar como veterinário</h1>
   <form action="" method="POST" onsubmit="loginVet(event)">
@@ -27,6 +27,6 @@
     <button type="submit">Entrar</button>
   </form>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="../scripts/loginVet.js"></script>
+  <script src="scripts/loginVet.js"></script>
 </body>
 </html>

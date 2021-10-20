@@ -8,7 +8,7 @@
 </head>
 <body>
   <p>
-    <a href="../">Voltar</a>
+    <a href="index.php">Voltar</a>
   </p>
   <h1>Entrar</h1>
   <form action="" method="POST" onsubmit="loginCliente(event)">
@@ -32,6 +32,6 @@
     </p>
   </form>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="../scripts/loginCliente.js"></script>
+  <script src="scripts/loginCliente.js"></script>
 </body>
 </html>
